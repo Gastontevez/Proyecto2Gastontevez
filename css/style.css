@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns:  3fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+
+header{
+    background-color: #22242B;
+    grid-area: header;
+    position: sticky;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: start;
+    
+}
+
+#logo{
+    background-color: #22242B;
+    flex-grow: 1;
+}
+
+
+#navheader{
+    background-color: #22242B;
+    flex-grow: 0;
+}
+
+#menu .envio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: start; 
+
+}
+
+#menu .envio input{
+    list-style-type: none;
+    background-color: white;
+    margin: 2px;
+    padding: 4px 80px;
+    border: 2px solid black;
+}
+
+#menu .envio label{
+    list-style-type: none;
+    background-color: #999999;
+    margin: 2px;
+    padding: 4px;
+    border: 2px solid black;
+}
+
+#menu .envio .registrar{
+    background-color: #E8CA4D;
+}
+
+#menu .menudenav{
+    background-color: #22242B;
+    color: white;
+    flex-grow: 1;
+}
+
+#menudenav1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 35px 0px 0px 0px;
+}
+
+#menudenav1 li a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+
+/* ACA FINALIZA EL HEADER */
+
+
+
+
+main{
+    height: 100%;
+    background-color: #2C2E35;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "seccion1"
+    "seccion2";
+    grid-row-gap: 10 px;
+}
+
+#seccion1{
+    grid-area: seccion1;
+    background-color: #2C2E35;
+
+}
+
+
+#seccion2{
+    grid-area: seccion2;
+    background-color: white;
+
+}
+
+#seccion22{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#seccion22 .foto{
+    height: 270px;
+    width: 280px;
+    border: 20px solid #E8CA4D;
+}
+
+
+
+/* ACA FINLAIZA EL MAIN */
+
+ footer{
+    grid-area: footer;
+    background-color: #2C2E35;
+    
+}
+
+#redsocial{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#redsocial .red img{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/* ACA FINALIZA EL FOOT */
+
+/* FINALIZA INDEX */
+
+
+
+
+
+/* PRODUCTO */
+
+#body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "mainproduc mainproduc mainproduc"
+    "footer footer footer";
+}
+
+
+
+
+/* INICIA MAIN */
+
+
+
+
+
+#mainproduc{
+    background-color: white;
+    grid-area: mainproduc;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "navP sectionnavP sectionnavP1"
+    "navP sectionnavP sectionnavP1";
+}
+
+#navP{
+    background-color: #999999;
+    grid-area: navP;
+}
+
+#navP div{
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+#navP div ul{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+#sectionnavP{
+    background-color: #E8CA4D;
+    grid-area: sectionnavP;
+}
+
+#producto2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+#producto2 .producto3{
+    height: 150px;
+    width: 100px;
+}
+
+#producto2 .producto3 li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+#sectionnavP1{
+    background-color: #22242B;
+    grid-area: sectionnavP1;
+}
+
+
+/* FINALIZA PRODUCTO */
+
+
+
+
+
+/* INICIA UBICACION */
+#bodyubi{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "ubicacion ubicacion ubicacion"
+    "footer footer footer";
+}
+
+
+
+
+#ubicacion{
+    background-color: white;
+    grid-area: ubicacion;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "navU ubi ubi"
+    "navU ubi ubi";
+}
+
+
+#navU{
+    grid-area: navU;
+}
+
+
+#ubi{
+    background-color: #999999;
+    grid-area: ubi;
+    
+}
+
+#ubi p{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
+/* INICIA ATENCION AL CLIENTE */
+
+#atencion{
+    list-style-type: none;
+    margin: 20px 10px;
+}
+
+.at{
+    background-color: #2C2E35;
+    color: white;
+}
+
+
+.ate{
+    list-style-type: none;
+    margin: 10px 0px;
+    color: white;
+}
+
+
+.ate1{
+    list-style-type: none;
+    margin: 10px 0px;
+    color: white;
+}
+
+.ate2{
+    list-style-type: none;
+    text-align: top;
+    color: white;
+}
+
+.ate3{
+    list-style-type: none;
+    text-align: start;
+    background-color: #E8CA4D;
+    width: 300px;
+    height: 200px;
+    margin: 5px 0px 10px 10px;
+}
+
+
+.ate4{
+    background-color: #2C2E35;
+    color: white;
+    margin: 20px 25px 5px 25px;
+}
